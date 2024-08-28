@@ -18,7 +18,7 @@ describe('Escrow', () => {
         realEstate = await RealEstate.deploy()
 
         // Mint 
-        let transaction = await realEstate.connect(seller).mint("https://ipfs.io/ipfs/QmQm5nCpRGKSby5mjYSRq7b4UauApG2RvB8UajiV9jzpUz");
+        let transaction = await realEstate.connect(seller).mint("https://gateway.pinata.cloud/ipfs/QmQm5nCpRGKSby5mjYSRq7b4UauApG2RvB8UajiV9jzpUz");
         await transaction.wait()
 
         // Deploy Escrow
